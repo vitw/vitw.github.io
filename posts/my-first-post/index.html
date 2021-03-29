@@ -11,7 +11,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta
   name="description"
-  content="This is my first post in this blog.I just want to see how this text looks on my blog."
+  content="This is my first post in this blog.I just want to see how this text looks on my blog. By looking at the file it’s quite easy to understand how the config works. The various temperatures and the corresponding fan speeds can be found under . For the purpose of testing the config to ensure it’s working, we’ll set the fan speed to 100%.
+For the first temperature threshold I set the UpThreshold to 50 and the DownThresthold to 0 with the FanSpeed to 100."
 />
 <meta
   name="keywords"
@@ -47,12 +48,14 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="My First Post"/>
-<meta name="twitter:description" content="This is my first post in this blog.I just want to see how this text looks on my blog."/>
+<meta name="twitter:description" content="This is my first post in this blog.I just want to see how this text looks on my blog. By looking at the file it’s quite easy to understand how the config works. The various temperatures and the corresponding fan speeds can be found under . For the purpose of testing the config to ensure it’s working, we’ll set the fan speed to 100%.
+For the first temperature threshold I set the UpThreshold to 50 and the DownThresthold to 0 with the FanSpeed to 100."/>
 
 
 
 <meta property="og:title" content="My First Post" />
-<meta property="og:description" content="This is my first post in this blog.I just want to see how this text looks on my blog." />
+<meta property="og:description" content="This is my first post in this blog.I just want to see how this text looks on my blog. By looking at the file it’s quite easy to understand how the config works. The various temperatures and the corresponding fan speeds can be found under . For the purpose of testing the config to ensure it’s working, we’ll set the fan speed to 100%.
+For the first temperature threshold I set the UpThreshold to 50 and the DownThresthold to 0 with the FanSpeed to 100." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://vitw.github.io/posts/my-first-post/" />
 <meta property="article:published_time" content="2021-03-08T02:07:12+05:00" />
@@ -175,7 +178,18 @@
 
     <div class="post-content">
       
-      <p>This is my first post in this blog.I just want to see how this text looks on my blog.</p>
+      <p>This is my first post in this blog.I just want to see how this text looks on my blog.
+By looking at the file it’s quite easy to understand how the config works. The various temperatures and the corresponding fan speeds can be found under <!-- raw HTML omitted -->. For the purpose of testing the config to ensure it’s working, we’ll set the fan speed to 100%.</p>
+<p>For the first temperature threshold I set the UpThreshold to 50 and the DownThresthold to 0 with the FanSpeed to 100.00. This will turn the fan on to 100% when the temperature is between 0 and 50 degrees Celsius.</p>
+<p>Save the config. In nano hit CTRL-X followed by Y when asked if you want to overwrite and finally Enter to commit the changes to that filename.</p>
+<p>Head back to the previous working directory, select the new config file to be loaded, start NBFC again, and then check its status to see if it’s working.
+If all is working, the same status output as you saw earlier should appear but now the fan speeds should be at 100.00. You should also start to hear the fans ramping up to speed. Hurrah!</p>
+<p>At this point you should change the various temperature steps and fan speeds to suit your needs.
+Object not set to an instance of an object: Mono is likely not installed correctly. If you had mono installed before you followed this guide, remove mono and then reinstall it using the method outlined in this guide.</p>
+<p>Could not communicate: The nbfc mono service is not running. Run the service and then this error should go away.</p>
+<p>Current and target fan speeds at 0.00: The config in use likely has the fans set to 0% at your laptop’s current temperature. Modify the config using the instructions above.</p>
+<p>Linux service disabled: If you assigned a config and attempted to run NBFC but this error still occurs, the problem is that nuget.exe was not added correctly when it was done automatically by running the install script. To fix this, simply run the following commands:</p>
+<p>Manually redownload nuget.exe with</p>
 
     </div>
     
